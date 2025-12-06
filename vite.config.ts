@@ -15,4 +15,7 @@ export default defineConfig({
     port: 3000,
     host: '0.0.0.0',
   },
+  build: {
+    chunkSizeWarningLimit: 1000,   // ← cette ligne supprime le warning jaune
+  },
 });
