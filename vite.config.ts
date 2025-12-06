@@ -16,6 +16,7 @@ export default defineConfig({
     host: '0.0.0.0',
   },
   build: {
-    chunkSizeWarningLimit: 1000,   // ← cette ligne supprime le warning jaune
+    chunkSizeWarningLimit: 1000,
+    watch: false,  // ← AJOUTE ÇA : désactive les watchers en build
   },
 });
